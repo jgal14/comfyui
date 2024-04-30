@@ -220,7 +220,7 @@ class BaseHandler:
             print("webhook_url is NOT valid!")    
     
     def handle(self):
-        self.comfyui_job_id = self.queue_job(30)
+        self.comfyui_job_id = self.queue_job(300)
         
         status = None
         while status != "complete":
